@@ -1,21 +1,84 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #2e2e2e;
+  /* margin-top: 60px; */
 }
-section::after {
+/* section::after {
   border-top: 3px double;
   display: block;
   content: '';
   flex-basis:100%;
   margin: 20px 0px;
-}
+} */
 #services {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+
+#hello {
+  padding-top: 35px;
+  background-color: #F2F2F2;
+  border-bottom: 1.5px solid #615550;
+  box-shadow: 0 0.5px 3px 0px grey;
+}
+#hello .top-flower {
+  height: 60px;
+  width: 140px;
+}
+#hello .title {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+#hello .subtitle {
+  margin: 0;
+}
+#hello hr {
+  margin-top: 30px;
+  margin-bottom: 1px;
+  /* padding-bottom: 3px; */
+}
+
+
+#about {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+#about .image {
+  flex: 1;
+}
+#about .image img{
+  width: 100%;
+  height: 100%;
+}
+#about .info{
+  flex: 1;
+  position: relative;
+  background-color: #F7EEE7;
+}
+#about .flower1 {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  height: 90%;
+}
+#about h1 {
+  display: inline-block;
+}
+#about .quote {
+  height: 30px;
+}
+#about .quote.open {
+  transform: rotate(0.5turn)
 }
