@@ -1,6 +1,7 @@
 :root {
   --quote-margin: 5px;
   --header-hight: 20vh;
+  font-size: 22px;
 }
 
 body, html {
@@ -13,7 +14,10 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2e2e2e;
-  /* margin-top: 60px; */
+}
+
+.bold {
+  font-weight: 600;
 }
 /* section::after {
   border-top: 3px double;
