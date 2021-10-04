@@ -1,0 +1,41 @@
+#about {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+  }
+  #about > div {
+	padding: 9vh 0;
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 9vh * 2);
+	width: var(--sections-width);
+  }
+  #about h1 {
+	font-family: 'Alef', sans-serif;
+	font-size: 2.25rem;
+	font-weight: bold;
+	color: rgb(74, 74, 74);
+  
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 140px 5px;
+  }
+  #about h4 {
+	font-size: 1rem;
+	font-weight: bold;
+	color: rgb(74, 74, 74);
+  
+	margin: 15px 0 0;
+  }
+  #about p {
+	font-size: 0.9rem;
+	font-weight: normal;
+  
+	margin: 15px 0 0;
+  }
+  #about .image {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }

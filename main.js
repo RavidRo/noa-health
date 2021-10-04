@@ -1,4 +1,9 @@
 import './style.css';
+import './styles/helps.css';
+import './styles/joinme.css';
+import './styles/about.css';
+import './styles/intro.css';
+import './styles/header.css';
 
 // document.querySelector('#app').innerHTML = `
 //   <h1>Hello Vite!</h1>
