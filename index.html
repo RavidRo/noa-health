@@ -6,7 +6,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,9 +15,11 @@
 	<body>
 		<div id="app">
 			<section id="header">
-				<img src="images/flower2.svg" alt="Little flower" class="top-flower" />
-				<h1 class="title">Noa Miretzky</h1>
-				<h4 class="subtitle">קואצ'רית לאורח חיים בריא ותזונה נכונה</h4>
+				<div>
+					<img src="images/flower2.svg" alt="Little flower" class="top-flower" />
+					<h1 class="title">Noa Miretzky</h1>
+					<h4 class="subtitle">קואצ'רית לאורח חיים בריא ותזונה נכונה</h4>
+				</div>
 			</section>
 
 			<section id="intro">
@@ -37,10 +39,10 @@
 				</div>
 			</section>
 
-			<section id="about">
+			<section id="about" class="dashed-bottom">
 				<div>
 					<div>
-						<h1>קצת עליי</h1>
+						<h1 class="dashed-bottom">קצת עליי</h1>
 						<h4>אני נועה מירצקי, קואצ'רית לאורח חיים בריא ותזונה נכונה.</h4>
 						<p>
 							אני בוגרת תואר ראשון בתקשורת מהבינתחומי הרצליה ובוגרת קורס קוצ׳יאנג
@@ -65,11 +67,36 @@
 				</div>
 			</section>
 
-			<section id="joinme">
-				<h1>הבנתי מה היא <span class="bold">בריאות אמיתית</span> ואיך להשיג אותה.</h1>
-				<div>
-					<p></p>
-					<p></p>
+			<section id="joinme" class="dashed-bottom">
+				<div id="pros">
+					<h1 class="dashed-bottom">
+						הבנתי מה היא <span class="bold">בריאות אמיתית</span> ואיך להשיג אותה.
+					</h1>
+					<div>
+						<p>
+							אז בין אם את כאן כי נמאס לך מהאכילה רגשית וביקורת עצמית או בין אם זה כי
+							את רוצה לעבור לאורח חיים בריא וטבעי יותר, אני כאן כדי לעזור לך להתחיל את
+							המסע שלך לעבר חיים בריאים ושמחים יותר.
+						</p>
+						<p>
+							לא מדובר בעוד פתרון מהיר או דיאטה שלא עובדת. 97% מהדיאטות לא עובדות,
+							97%! אני לא מאמינה בספירת קלוריות או בתפריט דל ומבאס, אלא בהבנה אמיתית
+							של מה היא אכילה מאוזנת ובניית מערכת יחסים בריאה עם האוכל.
+						</p>
+					</div>
+				</div>
+				<div id="helpwith">
+					<h1>אני יכולה לעזור לך ב...</h1>
+					<div id="helps">
+						<div class="help">
+							<h1 class="number">01</h1>
+							<h2 class="text">שינוי הרגלים</h2>
+						</div>
+						<div class="help">
+							<h1 class="number">01</h1>
+							<h2 class="text">שינוי הרגלים</h2>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -80,25 +107,7 @@
 				<a href="https://instagram.com/noa_miretzky?utm_medium=copy_link">Instagram</a>
 				<a href="https://youtube.com/channel/UCJjlJMixHMlRsp9hU3Pf3xg">Youtube</a>
 			</section>
-			<section id="joinme2">
-				<p>
-					אז בין אם את כאן כי נמאס לך מהאכילה רגשית וביקורת עצמית או בין אם זה כי את רוצה
-					לעבור לאורח חיים בריא וטבעי יותר, אני כאן כדי לעזור לך להתחיל את המסע שלך לעבר
-					חיים בריאים ושמחים יותר.
-				</p>
-				<p>
-					לא מדובר בעוד פתרון מהיר או דיאטה שלא עובדת. 97% מהדיאטות לא עובדות, 97%! אני לא
-					מאמינה בספירת קלוריות או בתפריט דל ומבאס, אלא בהבנה אמיתית של מה היא אכילה
-					מאוזנת ובניית מערכת יחסים בריאה עם האוכל.
-				</p>
-			</section>
-			<section id="helpwith">
-				<p>
-					<b>אני יכולה לעזור לך ב</b>שינוי הרגלים, ללמוד להקשיב לגוף שלך לאכול באופן
-					אינטואיטיבי להתמודד עם אכילה רגשית להשיג עיכול אופטימלי ללמוד את גישת ה80/20
-					לחזק את בריאות הגוף והנפש
-				</p>
-			</section>
+
 			<section id="services">
 				<div>לסדנא שלי</div>
 				<div>מפגשים וליווי אישי</div>
