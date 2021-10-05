@@ -1,4 +1,5 @@
 import './style.css';
+import './styles/findme.css';
 import './styles/helps.css';
 import './styles/joinme.css';
 import './styles/about.css';
