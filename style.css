@@ -4,12 +4,14 @@
   --header-top-padding: 0.15;
   --header-flower-height: 0.35;
   --sections-width: 750px;
+  --background-color: #F7EEE7;
   font-size: 20px;
 }
 
 body, html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 #app {
   font-family: 'Montserrat', Avenir, Helvetica, Arial, sans-serif;
@@ -31,6 +33,18 @@ p {
 }
 .behind {
   position: absolute;
+}
+.full-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 25px;
+  flex-wrap: wrap;
 }
 
 

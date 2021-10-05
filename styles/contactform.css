@@ -1,0 +1,98 @@
+#contactme {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--background-color);
+
+	padding: 20px 20px 150px;
+}
+#contactme > h1 {
+	font-family: 'Alef', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: rgb(74, 74, 74);
+}
+#fs-frm {
+	max-width: 600px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#fs-frm input,
+#fs-frm textarea,
+#fs-frm fieldset {
+	font-family: inherit;
+	color: inherit;
+	border: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+#fs-frm ::placeholder {
+	font-size: .825rem;
+	font-weight: 600;
+}
+#fs-frm fieldset {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	width: 100%;
+}
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm textarea {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	padding: .75em 1rem;
+	margin-bottom: 1.5rem;
+	background-color: var(--background-color);
+	resize: none;
+
+	font-size: .825rem;
+	font-weight: 600;
+	flex-grow: 1;
+
+	width: auto;
+}
+
+#fs-frm input:focus,
+#fs-frm textarea:focus {
+	border-bottom: thin solid gray;
+	outline: none;
+}
+
+#fs-frm [type="submit"] {
+	width: auto;
+	cursor: pointer;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+
+	font-family: 'Alef', sans-serif;
+	font-weight: 400;
+
+	border: 1px solid transparent;
+	border-radius: 3px;
+
+	margin-bottom: 0;
+	width: 160px;
+
+	background-color: #645954;
+	color: white;
+
+	
+}
+
+#fs-frm [type="submit"]:hover{
+	background-color: white;
+	color: black;
+	border: 1px solid rgba(0,0,0,1);
+}
+
