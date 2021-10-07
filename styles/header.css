@@ -6,34 +6,28 @@
 	border-bottom: 1.5px solid #615550;
 	box-shadow: 0 0px 5px 0px rgba(0, 0, 0, .7);
 	z-index: 1;
-  }
-  #header > div {
+}
+#header > div {
 	height: calc(100% - var(--header-hight) * var(--header-top-padding));
 	width: 100%;
 	padding-top: calc(var(--header-hight) * var(--header-top-padding));
-  }
-  #header .top-flower {
+}
+#header .top-flower {
 	height: calc(var(--header-hight) * var(--header-flower-height));
-  }
-  #header .title {
+}
+#header .title {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.75rem;
-	font-weight: bold;
 	margin: 0;
-  }
-  #header .subtitle {
-	font-family: 'Alef', sans-serif;
-	font-size: 1rem;
-	font-weight: bold;
+}
+#header .subtitle {
 	line-height: 15px;
 	margin: 0;
-  }
-  #header > div::after {
+}
+#header > div::after {
 	border-bottom: 0.02px solid rgb(68, 56, 56);
 	position: absolute;
 	width: 100%;
 	display: block;
 	bottom: 4px;
 	content: '';
-  }
-  
+}

@@ -8,10 +8,7 @@
 
 	padding: 20px 20px 150px;
 }
-#contactme > h1 {
-	font-family: 'Alef', sans-serif;
-	font-size: 1.5rem;
-	font-weight: bold;
+#contactme > h3 {
 	color: rgb(74, 74, 74);
 }
 #fs-frm {
@@ -36,6 +33,7 @@
 	-moz-appearance: none;
 }
 #fs-frm ::placeholder {
+	font-family: 'Heebo';
 	font-size: .825rem;
 	font-weight: 600;
 }
@@ -55,6 +53,7 @@
 	background-color: var(--background-color);
 	resize: none;
 
+	font-family: 'Heebo';
 	font-size: .825rem;
 	font-weight: 600;
 	flex-grow: 1;
@@ -77,6 +76,7 @@
 
 	font-family: 'Alef', sans-serif;
 	font-weight: 400;
+	font-size: 0.75rem;
 
 	border: 1px solid transparent;
 	border-radius: 3px;

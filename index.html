@@ -6,7 +6,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,8 +17,8 @@
 			<section id="header">
 				<div>
 					<img src="images/flower2.svg" alt="Little flower" class="top-flower" />
-					<h1 class="title">Noa Miretzky</h1>
-					<h4 class="subtitle">קואצ'רית לאורח חיים בריא ותזונה נכונה</h4>
+					<h2 id="title" class="title"></h2>
+					<h6 id="catch-phrase" class="subtitle"></h6>
 				</div>
 			</section>
 
@@ -31,10 +31,10 @@
 					<div class="text">
 						<div class="title">
 							<img src="images/quotes.svg" alt="Flower drawing" class="quote open" />
-							<h1>הגרסה הכי טובה שלך!</h1>
+							<h1 id="quote"></h1>
 							<img src="images/quotes.svg" alt="Flower drawing" class="quote close" />
 						</div>
-						<h5>קואצ'ינג תזונה | ליווי מותאם אישית | סדנאות אכילה בריאה</h5>
+						<h5 id="intro-services"></h5>
 					</div>
 				</div>
 			</section>
@@ -42,24 +42,9 @@
 			<section id="about" class="dashed-bottom">
 				<div>
 					<div class="text-container">
-						<h1 class="dashed-bottom">קצת עליי</h1>
-						<h4>אני נועה מירצקי, קואצ'רית לאורח חיים בריא ותזונה נכונה.</h4>
-						<p>
-							אני בוגרת תואר ראשון בתקשורת מהבינתחומי הרצליה ובוגרת קורס קוצ׳יאנג
-							בריאות אינטגרטיבית מהמרכז הגדול בעולם לתזונה אינטגרטיבית בניו יורק.
-						</p>
-						<p>
-							לפני 6 שנים התחילו לי בעיות הורמונליות שגרמו לנשירת שיער, פצעים, בעיות
-							עיכול וכו, זה היה wake up call עבורי! לפני שזה קרה, תמיד הייתי במרדף אחר
-							הדיאטה הכי חדשה והכי טובה. אכילה רגשית, רגשות אשמה וביקורת עצמית היו
-							דברים שהתמודדתי איתם מידי יום.
-						</p>
-						<p>
-							התחלתי להסתכל על חיי, בשביל לנסות להבין למה הגוף שלי מתנהג ככה. התחלתי
-							לשנות הרגלים מזיקים ולהחליף אותם בהרגלים טובים, שיניתי את התזונה שלי ואת
-							הפעילות הגופנית שעשיתי. למדתי להקשיב לגוף ולאכול באופן אינטואיטיבי. והכי
-							חשוב - למדתי לאהוב את עצמי.
-						</p>
+						<h1 id="about-title" class="dashed-bottom"></h1>
+						<h6 id="about-opening"></h6>
+						<div id="about-paragraphs"></div>
 					</div>
 					<div class="image">
 						<img src="https://via.placeholder.com/300" />
@@ -69,43 +54,37 @@
 
 			<section id="joinme" class="dashed-bottom">
 				<div id="pros">
-					<h1 class="dashed-bottom">
-						הבנתי מה היא <span class="bold">בריאות אמיתית</span> ואיך להשיג אותה.
-					</h1>
+					<h2 class="dashed-bottom">
+						<span id="join-title-1"></span
+						><span id="join-title-bold" class="bold"></span
+						><span id="join-title-2"></span>
+					</h2>
 					<div>
-						<p>
-							אז בין אם את כאן כי נמאס לך מהאכילה רגשית וביקורת עצמית או בין אם זה כי
-							את רוצה לעבור לאורח חיים בריא וטבעי יותר, אני כאן כדי לעזור לך להתחיל את
-							המסע שלך לעבר חיים בריאים ושמחים יותר.
-						</p>
-						<p>
-							לא מדובר בעוד פתרון מהיר או דיאטה שלא עובדת. 97% מהדיאטות לא עובדות,
-							97%! אני לא מאמינה בספירת קלוריות או בתפריט דל ומבאס, אלא בהבנה אמיתית
-							של מה היא אכילה מאוזנת ובניית מערכת יחסים בריאה עם האוכל.
-						</p>
+						<p id="join-reason-1"></p>
+						<p id="join-reason-2"></p>
 					</div>
 				</div>
 				<div id="helpwith">
-					<h1>אני יכולה לעזור לך ב...</h1>
+					<h2 id="helps-title"></h2>
 					<div class="helps-container">
 						<div class="helps text behind">
 							<div class="help">
-								<h2 class="text">שינוי הרגלים</h2>
+								<h4 class="text">שינוי הרגלים</h4>
 							</div>
 							<div class="help">
-								<h2 class="text">ללמוד להקשיב לגוף שלך</h2>
+								<h4 class="text">ללמוד להקשיב לגוף שלך</h4>
 							</div>
 							<div class="help">
-								<h2 class="text">לאכול באופן אינטואיטיבי</h2>
+								<h4 class="text">לאכול באופן אינטואיטיבי</h4>
 							</div>
 							<div class="help">
-								<h2 class="text">להתמודד עם אכילה רגשית</h2>
+								<h4 class="text">להתמודד עם אכילה רגשית</h4>
 							</div>
 							<div class="help">
-								<h2 class="text">להשיג עיכול אופטימלי</h2>
+								<h4 class="text">להשיג עיכול אופטימלי</h4>
 							</div>
 							<div class="help">
-								<h2 class="text">להגיע לאיזון הורמונלי</h2>
+								<h4 class="text">להגיע לאיזון הורמונלי</h4>
 							</div>
 						</div>
 						<div class="helps numbers">
@@ -135,12 +114,12 @@
 			<section id="findme">
 				<div>
 					<div id="social-media">
-						<h1 class="title">מצאו אותי ברשתות החברתיות</h1>
+						<h1 id="social-media-title" class="title"></h1>
 						<div class="links">
-							<a href="https://instagram.com/noa_miretzky?utm_medium=copy_link"
+							<a id="instagram-link"
 								><img src="./images/instagram.svg" alt="Instagram link"
 							/></a>
-							<a href="https://youtube.com/channel/UCJjlJMixHMlRsp9hU3Pf3xg"
+							<a id="youtube-link"
 								><img src="./images/youtube.svg" alt="Youtube link"
 							/></a>
 						</div>
@@ -150,7 +129,7 @@
 							<div class="service">
 								<img src="https://via.placeholder.com/300x400" />
 								<div class="details">
-									<h1>סדנאות</h1>
+									<h3 id="workshop-title"></h3>
 									<p>
 										Click here to edit the text and include the information you
 										would like to feature.
@@ -162,7 +141,7 @@
 							<div class="service">
 								<img src="https://via.placeholder.com/300x400" />
 								<div class="details">
-									<h1>מפגשים וליווי אישי</h1>
+									<h3 id="coaching-title"></h3>
 									<p>
 										Click here to edit the text and include the information you
 										would like to feature.
@@ -194,7 +173,7 @@
 			<iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
 
 			<section id="contactme">
-				<h1>צרי קשר</h1>
+				<h3>צרי קשר</h3>
 				<form
 					id="fs-frm"
 					name="contact-form"

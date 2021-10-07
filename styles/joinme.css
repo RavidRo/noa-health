@@ -5,9 +5,7 @@
 	flex-direction: column;
 	padding: 0 20px;
 }
-#pros h1{
-	font-family: 'Alef', sans-serif;
-	font-size: 1.75rem;
+#pros h2{
 	font-weight: normal;
 
 	margin: 0;
@@ -27,8 +25,7 @@
 }
 
 #pros p {
-	font-size: 0.9rem;
-	line-height: 32px;
 	flex: 1;
+	line-height: 32px;
 	min-width: 250px;
 }

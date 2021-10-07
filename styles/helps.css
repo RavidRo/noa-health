@@ -1,15 +1,12 @@
 #helpwith {
-	max-width: 100vw;
+	max-width: 100%;
 	width: calc(var(--sections-width) + 50px);
 	margin: 0 auto 40px;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 }
-#helpwith > h1 {
-	font-family: 'Alef', sans-serif;
-	font-size: 1.75rem;
-	font-weight: bold;
+#helpwith > h2 {
 	text-align: right;
 }
 .helps-container {
@@ -56,8 +53,9 @@
 
 } 
 .help .text {
-	font-size: 1.25rem;
-
+	font-family: 'Heebo';
+	font-weight: normal;
+	
 	z-index: 1;
 	
 	padding-left: 70px;

@@ -17,33 +17,50 @@
 	position: relative;
 	background-color: var(--background-color);
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 }
+
+#intro .text {
+	/* position: relative;
+	right: 10%; */
+}
+#intro .title {
+	display: flex;
+}
+#intro h1 {
+	display: inline-block;
+	margin: 0;
+
+	font-size: 2.75rem;
+	font-family: hebrewCursive;
+	font-weight: normal;
+	line-height: 80px;
+}
 #intro h5 {
-	margin-top: 10px;
+	margin-top: 25px;
+
+	font-size: 0.8rem;
+	font-family: 'Heebo';
 }
 #intro .flower1 {
 	position: absolute;
 	left: 0;
-	top: 3%;
-	height: 90%;
+	top: auto;
+	bottom: auto;
+	height: min(90%, 40vw);
 	/* width: 60%; */
-  }
-  #intro h1 {
-	display: inline-block;
-	margin: 0;
-  }
-  #intro .quote {
-	height: 30px;
-	margin-bottom: 10px;
-  }
-  #intro .quote.open {
+}
+
+#intro .quote {
+	height: 50px;
+	margin-bottom: 5px;
+}
+#intro .quote.open {
 	transform: rotate(0.5turn);
 	margin-left: var(--quote-margin);
-  }
-  #intro .quote.close {
+}
+#intro .quote.close {
 	margin-right: var(--quote-margin);
-  }
-  
-  
+}
+
