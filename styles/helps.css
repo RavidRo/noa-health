@@ -10,7 +10,6 @@
 	text-align: right;
 }
 .helps-container {
-	/* flex-grow: 1; */
 	position: relative;
 	display: flex;
 }
@@ -21,31 +20,18 @@
 	flex-wrap: wrap;
 	justify-content: stretch;
 	align-items: center;
-	row-gap: 50px;
 }
-.helps.numbers {
-	flex-grow: 1;
-}
-.helps.text {
-	height: 100%;
-	width: 100%;
-	right: 55px;
-}
-.help {
-	min-width: 200px;
-	width: calc(100% / 3);
+
+.helps  .help {
+	justify-content: flex-start;
+	align-items: center;
+
+	flex: 1;
+	min-width: max(calc(100% / 3), 200px);
 	display: inline-flex;
 	position: relative;
 }
-.helps.numbers .help {
-	justify-content: flex-start;
-	align-items: center;
-}
-.helps.text .help {
-	justify-content: flex-start;
-	align-items: center;
-	text-align: start;
-}
+
 .help .number {
 	font-size: 4.3rem;
 	font-family: 'Oswald', sans-serif;
@@ -53,13 +39,17 @@
 
 } 
 .help .text {
+	position: absolute;
+	right: 55px;
+
+	text-align: right;
 	font-family: 'Heebo';
-	font-weight: normal;
+	font-weight: 500;
 	
 	z-index: 1;
 	
-	padding-left: 70px;
 	margin: 0;
+	padding-left: 10px;
 }
 
 .help:nth-child(1) .number, .help:nth-child(7) .number{

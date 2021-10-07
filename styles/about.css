@@ -18,8 +18,6 @@
 	padding: 0 20px;
 }
 #about h1 {
-	color: rgb(74, 74, 74);
-
 	display: inline-block;
 	margin: 0 auto;
 	/* padding: 0 140px 5px; */
@@ -28,8 +26,7 @@
 }
 #about h6 {
 	font-family: 'Heebo';
-	font-weight: normal;
-	color: rgb(74, 74, 74);
+	font-weight: 500;
 
 	margin: 15px 0 0;
 }

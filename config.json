@@ -5,7 +5,7 @@
 	},
 	"intro": {
 		"quote": "הגרסה הכי טובה שלך!",
-		"services": ["סדנת אכילה בריאה", "ליווי מותאם אישית", "קואצ׳ינג תזונה"]
+		"services": ["קואצ׳ינג תזונה", "ליווי מותאם אישית", "סדנאות אכילה בריאה"]
 	},
 	"about": {
 		"title": "קצת עליי",
@@ -38,7 +38,7 @@
 		]
 	},
 	"social-media": {
-		"title": "מצאו אותי ברשתות החברתיות",
+		"title": "מצאי אותי ברשתות החברתיות",
 		"instagram": "https://www.instagram.com/noa_miretzky/?utm_medium=copy_link",
 		"youtube": "https://youtube.com/channel/UCJjlJMixHMlRsp9hU3Pf3xg"
 	},

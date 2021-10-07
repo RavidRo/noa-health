@@ -6,7 +6,7 @@
 
 #findme > div {
 	flex-grow: 1;
-	padding-top: 50px;
+	padding: 50px 0;
 
 	position: relative;
 	display: flex;
@@ -22,7 +22,7 @@
 	font-family: hebrewCursive;
 	font-weight: normal;
 	font-size: 3rem;
-	line-height: 25px;
+	line-height: 45px;
 
 	margin: 0 0 20px;
 }
@@ -62,8 +62,8 @@
 }
 .service h3 {
 	font-family: 'Heebo';
-	font-weight: normal;
-
+	font-weight: 500;
+	color: black;
 	margin: 0 0 12px;
 }
 .service p {
