@@ -2,8 +2,10 @@
 	background-color: var(--background-color);
 	min-height: 100vh;
 	display: flex;
-	flex-direction: column;
-	padding: 0 20px;
+	flex-direction: row;
+	position: relative;
+	justify-content: center;
+	
 }
 #pros h2{
 	font-weight: normal;
@@ -28,4 +30,32 @@
 	flex: 1;
 	line-height: 32px;
 	min-width: 250px;
+}
+
+#joinme .plant-top {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	overflow: hidden;
+}
+
+#joinme .plant-bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+#joinme .content {
+	height: 100%;
+	max-width: calc(100% - 40px);
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+}
+
+#joinme .image-left, #joinme .image-right {
+	position: relative;
+	overflow: hidden;
+	flex-grow: 1;
 }
