@@ -24,7 +24,6 @@ document.querySelector('#intro-services').innerHTML = config.intro.services.join
 document.querySelector('#about-title').innerHTML = config.about.title;
 document.querySelector('#about-opening').innerHTML = config.about.opening;
 const paragraphsElements = config.about.paragraphs.map((paragraph) => {
-	console.log('p');
 	let p = document.createElement('p');
 	p.innerHTML = paragraph;
 	return p;
@@ -45,6 +44,38 @@ document.querySelector('#youtube-link').setAttribute('href', config['social-medi
 // Services
 document.querySelector('#workshop-title').innerHTML = config.services['workshop'].title;
 document.querySelector('#coaching-title').innerHTML = config.services['personal-coaching'].title;
+// Workshop
+document.querySelector('#popup-workshop-title').innerHTML = config.workshop.title;
+document.querySelector('#popup-workshop-opening').innerHTML = config.workshop.opening;
+const infoElements = config.workshop.information.map((paragraph) => {
+	let p = document.createElement('p');
+	p.innerHTML = paragraph;
+	return p;
+});
+document.querySelector('#popup-workshop-information').replaceChildren(...infoElements);
+document.querySelector('#popup-workshop-second-title').innerHTML = config.workshop['second-title'];
+const intendedToElements = config.workshop['intended-to'].map((paragraph) => {
+	let p = document.createElement('p');
+	p.innerHTML = paragraph;
+	return p;
+});
+document.querySelector('#popup-workshop-intended-to').replaceChildren(...intendedToElements);
+document.querySelector('#popup-workshop-ending').innerHTML = config.workshop['save-your-seat'];
+// Coaching
+document.querySelector('#popup-coaching-title').innerHTML = config.coaching.title;
+const info1Elements = config.coaching['first-paragraphs'].map((paragraph) => {
+	let p = document.createElement('p');
+	p.innerHTML = paragraph;
+	return p;
+});
+document.querySelector('#popup-coaching-information-1').replaceChildren(...info1Elements);
+document.querySelector('#popup-coaching-second-title').innerHTML = config.coaching['second-title'];
+const info2Elements = config.coaching['second-paragraphs'].map((paragraph) => {
+	let p = document.createElement('p');
+	p.innerHTML = paragraph;
+	return p;
+});
+document.querySelector('#popup-coaching-information-2').replaceChildren(...info2Elements);
 
 // Opening and closing the modal
 var modals = document.querySelectorAll('[data-modal]');

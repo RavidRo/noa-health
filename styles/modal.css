@@ -28,6 +28,10 @@
 	background: #fff;
 	position: relative;
 	padding: 30px;
+	
+	max-width: 70vw;
+	max-height: 70vh;
+	overflow-y: auto;
 }
 .modal-close {
 	position: absolute;
