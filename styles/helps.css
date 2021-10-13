@@ -8,6 +8,12 @@
 }
 #helpwith > h2 {
 	text-align: right;
+	font-size: 1.4rem;
+}
+@media only screen and (min-width: 480px) {
+	#helpwith > h2 {
+		font-size: 1.75rem;
+	}
 }
 .helps-container {
 	position: relative;
