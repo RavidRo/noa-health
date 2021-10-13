@@ -44,7 +44,7 @@
 
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	column-gap: 100px;
 	row-gap: 50px;
 	flex-wrap: wrap;
@@ -58,13 +58,13 @@
 	background-color: white;
 }
 .service .details {
-	padding: 20px 20px 40px;
+	padding: 20px;
 }
 .service h3 {
 	font-family: 'Heebo';
 	font-weight: 500;
 	color: black;
-	margin: 0 0 12px;
+	margin: 0;
 }
 .service p {
 	margin: 0;
