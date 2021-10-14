@@ -21,7 +21,7 @@
 	margin: 0;
 	display: inline-block;
 	margin: 0 auto;
-	padding: 50px 30px 5px;
+	padding: 80px 30px 5px;
 
 
 }
@@ -94,6 +94,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 0 20px;
+	row-gap: 40px;
 }
 
 #joinme .image-left, #joinme .image-right {
@@ -107,15 +108,15 @@
 }
 @media only screen and (max-width: 590px) {
 
-#joinme .mobile-bottom-plant {
-	position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 200px;
-}
-#joinme .mobile-bottom-plant > img {
-	display: block;
-    height: 100%;
-	opacity: 0.2;
-}
+	#joinme .mobile-bottom-plant {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 200px;
+	}
+	#joinme .mobile-bottom-plant > img {
+		display: block;
+		height: 100%;
+		opacity: 0.2;
+	}
 }

@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 600px){
 	#social-media .title{
-		font-size: 3rem;
+		font-size: 2.7rem;
 		line-height: 45px;
 	}
 }
@@ -41,7 +41,12 @@
 	column-gap: 10px;
 }
 
-.links  img {
+#instagram-link img {
+	height: 40px;
+	width: auto;
+}
+
+#youtube-link img {
 	height: 50px;
 	width: auto;
 }

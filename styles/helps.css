@@ -12,7 +12,7 @@
 }
 @media only screen and (min-width: 480px) {
 	#helpwith > h2 {
-		font-size: 1.75rem;
+		font-size: 1.9rem;
 	}
 }
 .helps-container {
@@ -20,7 +20,7 @@
 	display: flex;
 }
 .helps {
-	row-gap: 40px;
+	row-gap: 60px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -39,7 +39,7 @@
 }
 
 .help .number {
-	font-size: 4.3rem;
+	font-size: 4.7rem;
 	font-family: 'Oswald', sans-serif;
 	margin: 0;
 
@@ -51,11 +51,12 @@
 	text-align: right;
 	font-family: 'Heebo';
 	font-weight: 500;
+	font-size: 1.37rem;
 	
 	z-index: 1;
 	
 	margin: 0;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 
 .help:nth-child(1) .number, .help:nth-child(7) .number{
