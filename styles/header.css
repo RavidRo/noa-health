@@ -17,11 +17,12 @@
 }
 #header .title {
 	font-family: 'Montserrat', sans-serif;
-	color: black;
+	color: #2f2d30;
 	margin: 0;
 }
 #header .subtitle {
 	line-height: 15px;
+	color: #373334;
 	margin: 0;
 }
 #header > div::after {

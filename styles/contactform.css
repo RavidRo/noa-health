@@ -9,6 +9,10 @@
 	padding: 20px 20px 100px;
 }
 
+#contactme > h3 {
+	color: #5a4a4a;
+}
+
 #fs-frm {
 	max-width: 600px;
 	width: 100%;
@@ -34,6 +38,7 @@
 	font-family: 'Heebo';
 	font-size: .825rem;
 	font-weight: 600;
+	color: #634e4485;
 }
 #fs-frm fieldset {
 	display: flex;
@@ -53,6 +58,8 @@
 
 	font-family: 'Heebo';
 	font-size: .825rem;
+	color: #634e44;
+
 	font-weight: 600;
 	flex-grow: 1;
 
@@ -82,7 +89,7 @@
 	margin-bottom: 0;
 	width: 160px;
 
-	background-color: #645954;
+	background-color: #634e44;
 	color: white;
 
 	transition: all 0.15s;
