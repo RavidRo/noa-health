@@ -80,5 +80,9 @@ p {
   flex-wrap: wrap;
 }
 
+.flip {
+  transform: rotateY(180deg);
+}
+
 
 

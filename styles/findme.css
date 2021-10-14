@@ -21,10 +21,17 @@
 #social-media .title{
 	font-family: hebrewCursive;
 	font-weight: normal;
-	font-size: 3rem;
-	line-height: 45px;
+	font-size: 2.2rem;
+	line-height: 30px;
 
 	margin: 0 0 20px;
+}
+
+@media screen and (min-width: 600px){
+	#social-media .title{
+		font-size: 3rem;
+		line-height: 45px;
+	}
 }
 
 .links {
@@ -53,9 +60,13 @@
 }
 
 .service {
-	width: 300px;
 	padding: 7px;
 	background-color: white;
+}
+.service img {
+	object-fit: cover;
+	height: 400px;
+	width: 300px;
 }
 .service .details {
 	padding: 20px;
