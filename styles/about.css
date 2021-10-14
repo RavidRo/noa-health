@@ -43,6 +43,11 @@
 	margin: 30px 20px 0 ;
 }
 
+@media only screen and (min-width: 768px) {
+	#about .image {
+		margin: 30px 150px 0 ;
+	}
+}
 #about .image img {
 	height: auto;
 	width: 100%;
