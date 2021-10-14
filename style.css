@@ -11,7 +11,7 @@
 }
 @font-face {
   font-family: hebrewCursive;
-  src: url(./fonts/FtPilKahol-1.00-400-Regular.otf);
+  src: url(./fonts/FtPilKahol-1.00-400-Regular.otf) format("opentype");
 }
 
 body, html {
