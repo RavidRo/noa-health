@@ -54,9 +54,9 @@ h6 {
 p {
   font-family: 'Heebo';
   font-size: 0.9rem;
-  font-weight: 500px;
+  font-weight: 400;
   color: rgb(74, 74, 74);
-  text-align: right;
+  text-align: justify;
 }
 .bold {
   font-weight: 700;

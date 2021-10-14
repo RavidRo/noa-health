@@ -5,6 +5,7 @@
 	flex-direction: row;
 	position: relative;
 	justify-content: center;
+	align-items: stretch;
 	
 }
 
@@ -89,7 +90,6 @@
 }
 
 #joinme .content {
-	height: 100%;
 	max-width: calc(100% - 40px);
 	display: flex;
 	flex-direction: column;
