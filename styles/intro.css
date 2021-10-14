@@ -58,12 +58,6 @@
 	/* object-fit: fill; */
 }
 
-@media only screen and (min-width: 1170px) {
-	#intro .image img {
-		width: auto;
-	}
-}
-
 #intro .info {
 	position: relative;
 	min-width: 320px;
@@ -71,8 +65,10 @@
 	
 	display: flex;
 	align-items: flex-start;
+
+	overflow-x: hidden;
 }
-@media only screen and (min-width: 590px) {
+@media only screen and (min-width: 610px) {
 	#intro .info {
 		align-items: center;
 	}
@@ -89,7 +85,6 @@
 }
 @media only screen and (min-width: 1170px) {
 	#intro .text {
-		justify-content: flex-start;
 		width: auto;
 		flex-grow: 1;
 		flex-direction: row-reverse;		
@@ -99,11 +94,16 @@
 	#intro .filler {
 		max-width: 300px;
 		flex-grow: 3;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 #intro .title {
 	display: flex;
 	justify-content: center;
+	align-items: flex-end;
 }
 #intro h1 {
 	display: inline-block;
@@ -120,9 +120,9 @@
     -o-transform:scale(1,1.3); /* Opera */
     transform:scale(1,1.3); /* W3C */
 }
-@media only screen and (min-width: 590px) {
+@media only screen and (min-width: 610px) {
 	#intro h1 {
-		font-size: 2.75rem;
+		font-size: 3rem;
 		line-height: 67px;
 	}
 }
@@ -140,7 +140,7 @@
     -o-transform:scale(1,1.1); /* Opera */
     transform:scale(1,1.1); /* W3C */
 }
-@media only screen and (min-width: 590px) {
+@media only screen and (min-width: 610px) {
 	#intro h5 {
 		font-size: 0.85rem;
 	}
@@ -148,10 +148,7 @@
 #intro .flower1 {
 	display: none;
 	position: absolute;
-	left: 0;
-	top: auto;
-	bottom: auto;
-	height: 100%;
+	margin-left: 150px;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -163,7 +160,7 @@
 #intro .quote {
 	display: inline-block;
 	height: 30px;
-	margin-bottom: 5px;
+	margin-bottom: 30px;
 }
 #intro .quote.open {
 	transform: rotate(0.5turn);
@@ -173,7 +170,7 @@
 	margin-right: var(--quote-margin);
 }
 
-@media only screen and (min-width: 590px) {
+@media only screen and (min-width: 610px) {
 	#intro .quote {
 		height: 50px;
 	}

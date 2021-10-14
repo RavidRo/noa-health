@@ -4,6 +4,8 @@ footer {
 	padding: 30px 20px;
 }
 
-footer #copyright {
+#copyright {
 	margin: 0;
+
+	font-size: 0.75rem;
 }

@@ -40,6 +40,24 @@ function initiateTextFromConfig() {
 	document.querySelector('#join-reason-2').innerHTML = config.joinme.reason2;
 	//Help
 	document.querySelector('#helps-title').innerHTML = config.helpwith.title;
+	const helps = config.helpwith.helps.map((help, index) => {
+		let div = document.createElement('div');
+		let h4 = document.createElement('h4');
+		let h1 = document.createElement('h1');
+
+		div.classList = 'help';
+		h4.classList = 'text';
+		h1.classList = 'number';
+
+		h4.innerHTML = help;
+		h1.innerHTML = `0${index + 1}`;
+
+		div.replaceChildren(h4, h1);
+
+		return div;
+	});
+	document.querySelector('#helps-list').replaceChildren(...helps);
+
 	// Social Media
 	document.querySelector('#social-media-title').innerHTML = config['social-media'].title;
 	document
@@ -108,7 +126,7 @@ function connectionModalsFunctionality() {
 
 function attachFormSubmitEvent(formId) {
 	function formSubmit(event) {
-		var url = 'https://formsubmit.co/romravid@gmail.com';
+		var url = `https://formsubmit.co/${config.email}`;
 		var request = new XMLHttpRequest();
 		request.open('POST', url, true);
 		request.onload = function () {

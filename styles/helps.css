@@ -1,6 +1,6 @@
 #helpwith {
 	max-width: 100%;
-	width: calc(var(--sections-width) + 50px);
+	width: calc(var(--sections-width) + 150px);
 	margin: 0 auto 40px;
 	flex-grow: 1;
 	display: flex;
@@ -27,6 +27,12 @@
 	justify-content: stretch;
 	align-items: center;
 }
+@media only screen and (min-width: 1076px) {
+	.helps {
+		position: relative;
+		right: 40px;
+	}
+}
 
 .helps  .help {
 	justify-content: flex-start;
@@ -50,13 +56,14 @@
 
 	text-align: right;
 	font-family: 'Heebo';
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 1.37rem;
+	line-height: 30px;
 	
 	z-index: 1;
 	
 	margin: 0;
-	padding-left: 30px;
+	padding-left: 55px;
 }
 
 .help:nth-child(1) .number, .help:nth-child(7) .number{
