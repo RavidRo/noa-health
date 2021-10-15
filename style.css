@@ -11,7 +11,12 @@
 }
 @font-face {
   font-family: hebrewCursive;
-  src: url(./fonts/FtPilKahol-1.00-400-Regular.otf) format("opentype");
+  src: url('fonts/FtPilKahol-100-400-Regular.eot');
+  src: url('fonts/FtPilKahol-100-400-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FtPilKahol-100-400-Regular.woff2') format('woff2'),
+       url('fonts/FtPilKahol-100-400-Regular.woff') format('woff'),
+       url('fonts/FtPilKahol-100-400-Regular.ttf')  format('truetype'),
+       url('fonts/FtPilKahol-100-400-Regular.svg#FtPilKahol 1.00') format('svg');
 }
 
 body, html {
