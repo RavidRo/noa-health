@@ -1,0 +1,26 @@
+[animation="scale-in"] { 
+	transition: 2s;
+	transform: scale(0.1);
+}
+[animation="scale-in"].is-inViewport { 
+	transform: scale(1);
+}
+
+[animation="fade-rotate"] { 
+	transition: 2s;
+	transform: rotate(180deg);
+	opacity: 0;
+}
+[animation="fade-rotate"].is-inViewport { 
+	transform: rotate(0deg);
+	opacity: 1;
+}
+[animation="fade-up"] { 
+	transition: opacity 2s, transform 2s;
+	opacity: 0;
+	transform: translateY(60px);
+}
+[animation="fade-up"].is-inViewport { 
+	opacity: 1;
+	transform: translateY(0);
+}

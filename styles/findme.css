@@ -66,6 +66,7 @@
 .service {
 	padding: 7px;
 	background-color: white;
+	max-width: calc(300px + 7px);
 }
 .service img {
 	object-fit: cover;
@@ -73,16 +74,21 @@
 	width: 300px;
 }
 .service .details {
-	padding: 20px;
+	padding: 5px 20px 20px;
+}
+.service .details .text-limiter {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+   	-webkit-line-clamp: 3; /* number of lines to show */
+	-webkit-box-orient: vertical;
 }
 .service h3 {
 	font-family: 'Heebo';
 	font-weight: 500;
 	color: black;
-	margin: 0;
+	margin: 0 0 5px;
 }
 .service p {
 	margin: 0;
-	text-align: center;
-	line-height: 26px;
 }
