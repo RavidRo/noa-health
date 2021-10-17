@@ -102,6 +102,7 @@ function initiateTextFromConfig() {
 		return p;
 	});
 	document.querySelector('#popup-coaching-information-2').replaceChildren(...info2Elements);
+	document.querySelector('#contact-form-title').innerHTML = config['contact-form-title'];
 }
 
 // Opening and closing the modal
@@ -114,11 +115,22 @@ function connectionModalsFunctionality() {
 			let modal = document.getElementById(trigger.dataset.modal);
 			modal.classList.add('open');
 			let exits = modal.querySelectorAll('.modal-exit');
+
+			function exitEvent(event) {
+				event.preventDefault();
+				modal.classList.remove('open');
+			}
+
+			let callToActionButton = document.getElementById('call-to-action-button');
+			let contactForm = document.getElementById('contactme');
+			callToActionButton.addEventListener('click', function (event) {
+				event.preventDefault();
+				exitEvent(event);
+				contactForm.scrollIntoView({ behavior: 'smooth' });
+				console.log(contactForm);
+			});
 			exits.forEach(function (exit) {
-				exit.addEventListener('click', function (event) {
-					event.preventDefault();
-					modal.classList.remove('open');
-				});
+				exit.addEventListener('click', exitEvent);
 			});
 		});
 	});
@@ -146,6 +158,10 @@ function attachFormSubmitEvent(formId) {
 	}
 
 	document.getElementById(formId).addEventListener('submit', formSubmit);
+}
+
+function attachCallToActionEvent() {
+	function callToAction(event) {}
 }
 
 initiateTextFromConfig();

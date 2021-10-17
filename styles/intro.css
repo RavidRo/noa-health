@@ -1,17 +1,23 @@
 #intro {
 	position: relative;
-	/* height: calc(100vh - var(--header-hight)); */
-	min-height: calc(100vh - var(--header-hight));
+	/* min-height: calc(100vh - var(--header-hight)); */
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	flex-wrap: wrap;
 	align-items: center;
 
 	background-color: var(--background-color);
 }
+@media only screen and (min-width: 630px) {
+	#intro {
+		min-height: calc(100vh - var(--header-hight));
+	}
 
-@media only screen and (min-width: 1170px) {
+}
+
+
+@media only screen and (min-width: 1230px) {
 	#intro {
 		height: calc(100vh - var(--header-hight));
 		flex-direction: row;
@@ -28,9 +34,9 @@
 
 	flex: 1;
 
-	padding: 20px;
+	/* padding: 20px; */
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1230px) {
 	#intro .image {
 		max-width: calc(100%);
 		max-height: 100%;
@@ -54,8 +60,8 @@
 
 #intro .image img {
 	width: 100%;
-	height: auto;
-	/* object-fit: fill; */
+	height: 100%;
+	object-fit: contain;
 }
 
 #intro .info {
@@ -68,7 +74,7 @@
 
 	overflow-x: hidden;
 }
-@media only screen and (min-width: 610px) {
+@media only screen and (min-width: 630px) {
 	#intro .info {
 		align-items: center;
 	}
@@ -76,21 +82,21 @@
 
 #intro .text {
 	width: 100%;
-	padding: 0 20px;
+	padding: 30px 20px;
 
 	position: relative;
 	display: flex;
 	justify-content: center;
 	
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1230px) {
 	#intro .text {
 		width: auto;
 		flex-grow: 1;
 		flex-direction: row-reverse;		
 	}
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1230px) {
 	#intro .filler {
 		max-width: 300px;
 		flex-grow: 3;
@@ -121,7 +127,7 @@
     -o-transform:scale(1,1.3); /* Opera */
     transform:scale(1,1.3); /* W3C */
 }
-@media only screen and (min-width: 610px) {
+@media only screen and (min-width: 630px) {
 	#intro h1 {
 		font-size: 3rem;
 		line-height: 67px;
@@ -129,7 +135,7 @@
 }
 
 #intro h5 {
-	margin-top: 55px;
+	margin: 55px 0 0;
 
 	font-size: 0.6rem;
 	font-family: 'Heebo';
@@ -142,7 +148,7 @@
     -o-transform:scale(1,1.1); /* Opera */
     transform:scale(1,1.1); /* W3C */
 }
-@media only screen and (min-width: 610px) {
+@media only screen and (min-width: 630px) {
 	#intro h5 {
 		font-size: 0.85rem;
 	}
@@ -153,7 +159,7 @@
 	margin-left: 150px;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1230px) {
 	#intro .flower1 {
 		display: block;
 	}
@@ -172,7 +178,7 @@
 	margin-right: var(--quote-margin);
 }
 
-@media only screen and (min-width: 610px) {
+@media only screen and (min-width: 630px) {
 	#intro .quote {
 		height: 50px;
 	}
