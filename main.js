@@ -53,6 +53,8 @@ function initiateTextFromConfig() {
 		h4.innerHTML = help;
 		h1.innerHTML = `0${index + 1}`;
 
+		div.setAttribute('animation', 'fade-left');
+
 		div.replaceChildren(h4, h1);
 
 		return div;
@@ -132,12 +134,15 @@ function connectionModalsFunctionality() {
 			}
 
 			let callToActionButton = document.getElementById('call-to-action-button');
-			let contactForm = document.getElementById('contactme');
-			callToActionButton.addEventListener('click', function (event) {
+			let callToActionButton2 = document.getElementById('call-to-action-button-2');
+			function goToContact(event) {
 				event.preventDefault();
 				exitEvent(event);
 				contactForm.scrollIntoView({ behavior: 'smooth' });
-			});
+			}
+			let contactForm = document.getElementById('contactme');
+			callToActionButton.addEventListener('click', goToContact);
+			callToActionButton2.addEventListener('click', goToContact);
 			exits.forEach(function (exit) {
 				exit.addEventListener('click', exitEvent);
 			});
