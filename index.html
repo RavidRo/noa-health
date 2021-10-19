@@ -52,7 +52,11 @@
 						</div>
 					</div>
 					<div class="filler">
-						<img src="images/oranges2.png" alt="Background oranges" class="flower1" />
+						<img
+							src="images/intro-background.png"
+							alt="Background plants"
+							class="flower1"
+						/>
 					</div>
 				</div>
 			</section>
@@ -107,7 +111,7 @@
 			<section id="findme" class="dashed-bottom">
 				<div>
 					<div id="services">
-						<a data-modal="modal-personal">
+						<a data-modal="modal-workshop">
 							<div class="service" animation="fade-up">
 								<img src="./images/shake.png" class="flip" alt="Noa making shake" />
 								<div class="details">
@@ -115,11 +119,14 @@
 									<div class="text-limiter">
 										<p id="workshop-description"></p>
 									</div>
-									<button class="more-details-button">לפרטים נוספים</button>
+									<button
+										id="more-details-workshop"
+										class="more-details-button"
+									></button>
 								</div>
 							</div>
 						</a>
-						<a data-modal="modal-workshop">
+						<a data-modal="modal-personal">
 							<div class="service" animation="fade-up">
 								<img src="./images/desk.png" alt="Noa working on her desk" />
 								<div class="details">
@@ -127,7 +134,10 @@
 									<div class="text-limiter">
 										<p id="coaching-description"></p>
 									</div>
-									<button class="more-details-button">לפרטים נוספים</button>
+									<button
+										id="more-details-coaching"
+										class="more-details-button"
+									></button>
 								</div>
 							</div>
 						</a>
@@ -146,28 +156,90 @@
 				</div>
 			</section>
 
-			<div class="modal" id="modal-personal">
-				<div class="modal-bg modal-exit"></div>
-				<div class="modal-container">
-					<h1 id="popup-workshop-title"></h1>
-					<h5 id="popup-workshop-opening"></h5>
-					<div id="popup-workshop-information"></div>
-					<h3 id="popup-workshop-second-title"></h3>
-					<div id="popup-workshop-intended-to"></div>
-					<a id="call-to-action-button" href="#contactme">
-						<h6 id="popup-workshop-ending"></h6
-					></a>
-					<button class="modal-close modal-exit">X</button>
-				</div>
-			</div>
 			<div class="modal" id="modal-workshop">
 				<div class="modal-bg modal-exit"></div>
 				<div class="modal-container">
-					<h1 id="popup-coaching-title"></h1>
-					<div id="popup-coaching-information-1"></div>
-					<h3 id="popup-coaching-second-title"></h3>
-					<div id="popup-coaching-information-2"></div>
-					<button class="modal-close modal-exit">X</button>
+					<div class="padder">
+						<img src="./images/leaf-2.png" class="modal-image-left" alt="leaf" />
+						<h1 id="popup-workshop-title"></h1>
+						<div class="modal-details-container">
+							<img
+								src="./images/border-top.png"
+								alt="Border top"
+								class="modal-border-top"
+							/>
+							<h5 id="popup-workshop-opening"></h5>
+							<div id="popup-workshop-information"></div>
+							<h3 id="popup-workshop-second-title"></h3>
+							<div id="popup-workshop-intended-to"></div>
+							<a id="call-to-action-button" href="#contactme">
+								<h6 id="popup-workshop-ending"></h6
+							></a>
+							<img
+								src="./images/border-bottom-simple.png"
+								alt="Border top"
+								class="modal-border-bottom"
+							/>
+						</div>
+						<img src="./images/leaf-1.png" class="modal-image-right" alt="leaf" />
+					</div>
+					<button class="modal-close modal-exit">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+						>
+							<path
+								d="M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="modal" id="modal-personal">
+				<div class="modal-bg modal-exit"></div>
+				<div class="modal-container">
+					<div class="padder">
+						<img
+							src="./images/leaf-outline-1.png"
+							class="modal-image-left"
+							alt="leaf"
+						/>
+						<h1 id="popup-coaching-title"></h1>
+						<div class="modal-details-container">
+							<img
+								src="./images/border-top.png"
+								alt="Border top"
+								class="modal-border-top"
+							/>
+							<div id="popup-coaching-information-1"></div>
+							<h3 id="popup-coaching-second-title"></h3>
+							<div id="popup-coaching-information-2"></div>
+							<img
+								src="./images/border-bottom-simple.png"
+								alt="Border top"
+								class="modal-border-bottom"
+							/>
+						</div>
+						<img
+							src="./images/leaf-outline-2.png"
+							class="modal-image-right"
+							alt="leaf"
+						/>
+					</div>
+					<button class="modal-close modal-exit">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+						>
+							<path
+								d="M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z"
+							/>
+						</svg>
+					</button>
 				</div>
 			</div>
 

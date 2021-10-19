@@ -74,7 +74,7 @@
 	width: 300px;
 }
 .service .details {
-	padding: 5px 20px 20px;
+	padding: 5px 20px 25px;
 }
 .service .details .text-limiter {
 	overflow: hidden;
@@ -91,28 +91,4 @@
 }
 .service p {
 	margin: 0;
-}
-
-.service .more-details-button {
-	font-family: 'Alef';
-	font-weight: bold;
-	font-size: 1.156rem;
-	color: #4d4341;
-
-	background-color: #f2e4d8;
-	border: none;
-	border-radius: 5px;
-
-	margin-top: 20px;
-	padding: 10px 20px;
-
-	cursor: pointer;
-	transition: .2s;
-}
-
-.service .more-details-button:hover {
-	color: #f2e4d8;
-	background-color: #4d4341;
-	border: none;
-
 }

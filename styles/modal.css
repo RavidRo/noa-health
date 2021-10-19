@@ -27,10 +27,9 @@
 	border-radius: 10px;
 	background: #fff;
 	position: relative;
-	padding: 30px;
 	
-	max-width: 70vw;
-	max-height: 70vh;
+	max-width: 80vw;
+	max-height: 90vh;
 	overflow-y: auto;
 }
 .modal-close {
@@ -39,18 +38,49 @@
 	top: 15px;
 	outline: none;
 	appearance: none;
-	color: #f78fc3;
 	background: none;
 	border: 0px;
-	font-weight: bold;
-	font-size: 1.4rem;
 	cursor: pointer;
-	transition: color 0.1s;
+	
+	/* transition: invert 0.5s; */
+	/* color: #eecbab; */
+	/* https://codepen.io/sosuke/pen/Pjoqqp - Hex color to filter */
+	filter: invert(100%) sepia(8%) saturate(5702%) hue-rotate(306deg) brightness(93%) contrast(98%);
 }
 .modal-close:hover {
-	color: #fad9ea;
+	/* color: #f2e4d8; */
+	filter: invert(84%) sepia(1%) saturate(2595%) hue-rotate(336deg) brightness(106%) contrast(105%);
 }
 
 [data-modal] {
 	cursor: pointer;
+}
+
+.modal-details-container {
+	position: relative;
+	padding: 20px;
+}
+.modal-image-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.modal-image-right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.modal-border-top {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.modal-border-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.modal h5 {
+	margin-top: 0;
 }

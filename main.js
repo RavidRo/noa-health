@@ -107,6 +107,8 @@ function initiateTextFromConfig() {
 	});
 	document.querySelector('#popup-coaching-information-2').replaceChildren(...info2Elements);
 	document.querySelector('#contact-form-title').innerHTML = config['contact-form-title'];
+	document.querySelector('#more-details-workshop').innerHTML = config['more-details-workshop'];
+	document.querySelector('#more-details-coaching').innerHTML = config['more-details-coaching'];
 }
 
 // Opening and closing the modal
