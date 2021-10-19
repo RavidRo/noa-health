@@ -83,11 +83,7 @@ p {
   column-gap: 25px;
   flex-wrap: wrap;
 }
-.padder {
-  position: relative;
-  padding: 20px 5% 120px;
-  overflow: hidden;
-}
+
 .flip {
   transform: rotateY(180deg);
 }

@@ -110,6 +110,7 @@ function initiateTextFromConfig() {
 		return p;
 	});
 	document.querySelector('#popup-coaching-information-2').replaceChildren(...info2Elements);
+	document.querySelector('#popup-coaching-ending').innerHTML = config.coaching['save-your-seat'];
 	// Contact Form
 	document.querySelector('#contact-form-title').innerHTML = config['contact-form-title'];
 }
