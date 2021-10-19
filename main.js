@@ -72,6 +72,8 @@ function initiateTextFromConfig() {
 		config.services['personal-coaching'].title;
 	document.querySelector('#coaching-description').innerHTML =
 		config.coaching['first-paragraphs'][0];
+	document.querySelector('#more-details-workshop').innerHTML = config['more-details-workshop'];
+	document.querySelector('#more-details-coaching').innerHTML = config['more-details-coaching'];
 	// Workshop
 	document.querySelector('#popup-workshop-title').innerHTML = config.workshop.title;
 	document.querySelector('#popup-workshop-opening').innerHTML = config.workshop.opening;
@@ -92,6 +94,8 @@ function initiateTextFromConfig() {
 	document.querySelector('#popup-workshop-ending').innerHTML = config.workshop['save-your-seat'];
 	// Coaching
 	document.querySelector('#popup-coaching-title').innerHTML = config.coaching.title;
+	document.querySelector('#popup-coaching-opening-1').innerHTML = config.coaching['opening-1'];
+	document.querySelector('#popup-coaching-opening-2').innerHTML = config.coaching['opening-2'];
 	const info1Elements = config.coaching['first-paragraphs'].map((paragraph) => {
 		let p = document.createElement('p');
 		p.innerHTML = paragraph;
@@ -106,9 +110,8 @@ function initiateTextFromConfig() {
 		return p;
 	});
 	document.querySelector('#popup-coaching-information-2').replaceChildren(...info2Elements);
+	// Contact Form
 	document.querySelector('#contact-form-title').innerHTML = config['contact-form-title'];
-	document.querySelector('#more-details-workshop').innerHTML = config['more-details-workshop'];
-	document.querySelector('#more-details-coaching').innerHTML = config['more-details-coaching'];
 }
 
 // Opening and closing the modal

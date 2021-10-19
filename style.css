@@ -85,7 +85,8 @@ p {
 }
 .padder {
   position: relative;
-  padding: 30px;
+  padding: 20px 5% 120px;
+  overflow: hidden;
 }
 .flip {
   transform: rotateY(180deg);
@@ -106,6 +107,8 @@ p {
 
 	cursor: pointer;
 	transition: .2s;
+
+  z-index: 2;
 }
 
 .more-details-button:hover {

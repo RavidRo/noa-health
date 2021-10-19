@@ -54,9 +54,14 @@
 	align-items: center;
 
 	padding: 30px;
-
+	padding-top: 0;
 }
-
+@media only screen and (min-width: 1230px) {
+	#intro .overflow {
+		padding: 30px;
+		padding-top: 30px;
+	}
+}
 
 #intro .image img {
 	width: 100%;
@@ -72,7 +77,7 @@
 	display: flex;
 	align-items: flex-start;
 
-	overflow-x: hidden;
+	overflow: hidden;
 }
 @media only screen and (min-width: 630px) {
 	#intro .info {
@@ -82,7 +87,7 @@
 
 #intro .text {
 	width: 100%;
-	padding: 30px 20px;
+	padding: 30px 20px 20px;
 
 	position: relative;
 	display: flex;
@@ -134,9 +139,21 @@
 		line-height: 67px;
 	}
 }
+@media only screen and (min-width: 1120px) {
+	#intro h1 {
+		font-size: 3rem;
+		line-height: 67px;
+	}
+}
+@media only screen and (min-width: 1450px) {
+	#intro h1 {
+		font-size: 4rem;
+		line-height: 117px;
+	}
+}
 
 #intro h5 {
-	margin: 55px 0 0;
+	margin: 25px 0 0;
 
 	font-size: 0.6rem;
 	font-family: 'Heebo';
@@ -151,7 +168,13 @@
 }
 @media only screen and (min-width: 630px) {
 	#intro h5 {
-		font-size: 0.85rem;
+		margin: 55px 0 0;
+		font-size: 1rem;
+	}
+}
+@media only screen and (min-width: 1450px) {
+	#intro h5 {
+		font-size: 1.1rem;
 	}
 }
 #intro .flower1 {
