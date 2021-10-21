@@ -2,10 +2,36 @@
 footer {
 	background-color: #F2F2F2;
 	padding: 30px 20px;
+	position: relative;
 }
 
 #copyright {
-	margin: 0;
+	margin: 0 0 10px;
 
 	font-size: 0.75rem;
+}
+
+.credit {
+	position: relative;
+	margin: 0;
+	font-size: 0.6rem;
+	font-weight: 200;
+	display: inline-block;
+	align-items: center;
+}
+
+.credit-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.linkedin {
+	height: 12px;
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+.credit span {
+	font-size: 0.4rem;
 }

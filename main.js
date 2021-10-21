@@ -222,6 +222,19 @@ function onMobile() {
 	return check;
 }
 
+function attachCredit() {
+	document
+		.querySelector('#ravid-link')
+		.addEventListener('click', () =>
+			window.open('https://www.linkedin.com/in/ravid-rom', '_blank').focus()
+		);
+	document
+		.querySelector('#nikol-link')
+		.addEventListener('click', () =>
+			window.open('https://www.linkedin.com/in/nikolgolberg', '_blank').focus()
+		);
+}
+
 initiateTextFromConfig();
 connectionModalsFunctionality();
 setCopyrightYear();
@@ -231,3 +244,4 @@ if (onMobile()) {
 	cancelAnimations();
 }
 attachFormSubmitEvent('fs-frm');
+attachCredit();
