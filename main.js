@@ -72,28 +72,39 @@ function initiateTextFromConfig() {
 	document.querySelector('#workshop-description').innerHTML = config.workshop.opening;
 	document.querySelector('#coaching-title').innerHTML =
 		config.services['personal-coaching'].title;
-	document.querySelector('#coaching-description').innerHTML =
-		config.coaching['first-paragraphs'][0];
+	document.querySelector(
+		`#coaching-description`
+	).innerHTML = `${config.coaching['opening-1']} ${config.coaching['opening-2']} ${config.coaching['first-paragraphs'][0]}`;
 	document.querySelector('#more-details-workshop').innerHTML = config['more-details-workshop'];
 	document.querySelector('#more-details-coaching').innerHTML = config['more-details-coaching'];
 	// Workshop
 	document.querySelector('#popup-workshop-title').innerHTML = config.workshop.title;
 	document.querySelector('#popup-workshop-opening').innerHTML = config.workshop.opening;
-	const infoElements = config.workshop.information.map((paragraph) => {
+	const infoElements = config.workshop['information-1'].map((paragraph) => {
 		let p = document.createElement('p');
-		p.innerHTML = `- ${paragraph}`;
+		p.innerHTML = paragraph;
 		return p;
 	});
 	document.querySelector('#popup-workshop-information').replaceChildren(...infoElements);
 	document.querySelector('#popup-workshop-second-title').innerHTML =
 		config.workshop['second-title'];
-	const intendedToElements = config.workshop['intended-to'].map((paragraph) => {
+	const intendedToElements = config.workshop['information-2'].map((paragraph) => {
+		let p = document.createElement('p');
+		p.innerHTML = `- ${paragraph}`;
+		return p;
+	});
+	document.querySelector('#popup-workshop-intended-to').replaceChildren(...intendedToElements);
+	document.querySelector('#popup-workshop-third-title').innerHTML =
+		config.workshop['third-title'];
+	const infoElements3 = config.workshop['information-3'].map((paragraph) => {
 		let p = document.createElement('p');
 		p.innerHTML = paragraph;
 		return p;
 	});
-	document.querySelector('#popup-workshop-intended-to').replaceChildren(...intendedToElements);
-	document.querySelector('#popup-workshop-ending').innerHTML = config.workshop['save-your-seat'];
+	document.querySelector('#popup-workshop-information-3').replaceChildren(...infoElements);
+	document.querySelector('#popup-workshop-ending').innerHTML = config.workshop.ending;
+	document.querySelector('#popup-workshop-ending-btn').innerHTML =
+		config.workshop['save-your-seat'];
 	// Coaching
 	document.querySelector('#popup-coaching-title').innerHTML = config.coaching.title;
 	document.querySelector('#popup-coaching-opening-1').innerHTML = config.coaching['opening-1'];
